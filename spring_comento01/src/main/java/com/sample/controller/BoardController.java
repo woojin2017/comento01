@@ -17,7 +17,7 @@ import com.sample.service.BoardService;
 //POST : 글쓰기 작업 완료 후 DB전송 및 listAll.jsp에 구현
 
 @Controller // 컨트롤러임을 명시
-@RequestMapping(value = "service") // 주소 패턴
+@RequestMapping(value = "/")// 주소 패턴
 public class BoardController {
 
 	@Inject   // 주입(심부름꾼) 명시

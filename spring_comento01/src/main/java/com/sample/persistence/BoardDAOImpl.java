@@ -12,9 +12,12 @@ import com.sample.domain.BoardVO;
 @Repository
 public class BoardDAOImpl  implements BoardDAO {
 
+	/*
 	@Inject
+		*/
 	private SqlSession session;
-	private static String namespace = "com.spring_comento.mapper.BoardMapper";
+
+	private static String namespace = "com.sample.mapper.BoardMapper";
 									
 	@Override
 	public void create(BoardVO vo) throws Exception {

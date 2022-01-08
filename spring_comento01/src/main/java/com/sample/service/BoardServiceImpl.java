@@ -11,7 +11,7 @@ import com.sample.persistence.BoardDAO;
 
 //Service : 유지보수와 로직프로세스를 유연하게 처리하기 위한 중간 단계.
 
-@Service("boardService")
+@Service
 public class BoardServiceImpl implements BoardService {
 	
 	
