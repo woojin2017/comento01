@@ -8,13 +8,13 @@ import java.util.Date;
   */
 
 public class BoardVO {
-
 	private Integer bno;
 	private String title;
 	private String content;
-	private String  writer;
+	private String writer;
 	private Date regdate;
-	private int Viewcnt;
+	private int viewcnt;
+	
 	public Integer getBno() {
 		return bno;
 	}
@@ -46,12 +46,17 @@ public class BoardVO {
 		this.regdate = regdate;
 	}
 	public int getViewcnt() {
-		return Viewcnt;
+		return viewcnt;
 	}
 	public void setViewcnt(int viewcnt) {
-		Viewcnt = viewcnt;
+		this.viewcnt = viewcnt;
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "BoardVO [bno=" + bno + ", title=" + title + ", content=" + content + ", writer=" + writer + ", regdate="
+				+ regdate + ", viewcnt=" + viewcnt + "]";
+	}
 	
 }
