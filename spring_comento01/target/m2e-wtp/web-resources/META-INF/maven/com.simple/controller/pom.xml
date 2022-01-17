@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.sample</groupId>
+	<groupId>com.simple</groupId>
 	<artifactId>controller</artifactId>
 	<name>spring_comento01</name>
 	<packaging>war</packaging>
@@ -15,27 +15,12 @@
 	</properties>
 	<dependencies>
 	
-	<!-- oracle 수정하기
-	<dependency>
-	    <groupId>com.oracle.database.jdbc</groupId>
-	    <artifactId>ojdbc10</artifactId>
-	    <version>19.8.0.0</version>
-	</dependency> -->
-	 <!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP
-    <dependency> 
-        <groupId>com.zaxxer</groupId> 
-        <artifactId>HikariCP</artifactId> 
-        <version>4.0.2</version> 
-    </dependency>
-  --> 
-	
-	  <!-- MySQL  -->
+	  <!-- MySQL -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.27</version>
         </dependency>
-
  
         <!-- MyBatis 3.4.1 -->
         <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->

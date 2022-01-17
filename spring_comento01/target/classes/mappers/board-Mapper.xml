@@ -3,38 +3,35 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.spring.mapper.BoardMapper">
+<mapper namespace="com.sample.mapper.BoardMapper">
 
   <insert id="create">
-  insert into board (title, content, writer)
-  values(#{title},#{content}.#{writer})
-  </insert>
-  
-  <select id="read" resultType="com.sample.domain.BoardVO">
-  select 
-  	bno,title,content,writer,regdate,viewcnt
-  	from
-  	board
-  	where bno = #{bno}
-  </select>
-  
-  <update id="update">
-  update board set title =#{title}, content =#{content}
-  where bno =#{bno}
-  </update>
-  
-  <delete id= "delete" >
-  delete from board where bno = #{bno}
-  </delete>
-  
-  <select id ="listAll" resultType="com.sample.domain.BoardVO">
-  <![CDATA[
-  select 
-   bno, title, contentm writer, regdate, viewcnt
-   from board
-   where bno >0
-   order by dno desc, regdate desc
-   ]]>
-  </select>
+		insert into board (title, content, writer) 
+		values(#{title},#{content}, #{writer})
+	</insert>
 
- </mapper>
+	<select id="read" resultType="com.sample.domain.BoardVO">
+		select bno, title, content, writer, regdate, viewcnt 
+		from board 
+		where bno = #{bno}
+	</select>
+
+	<update id="update">
+		update board set title =#{title}, content =#{content} 
+		where bno = #{bno}
+	</update>
+
+	<delete id="delete">
+		delete from board where bno = #{bno}
+	</delete>
+
+	<select id="listAll" resultType="com.myp.domain.BoardVO">
+	<![CDATA[
+		select bno, title, content, writer, regdate, viewcnt 
+		from board 
+		where bno > 0 
+		order by bno desc, regdate desc
+	]]>  
+	</select>
+
+</mapper>

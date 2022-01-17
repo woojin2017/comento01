@@ -5,16 +5,18 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.sample.domain.BoardVO;
 @Repository
 public class BoardDAOImpl implements BoardDAO {
 	
+	
 	@Inject
 	private SqlSession session;
 	
-	private static String namespace = "com.spring.mapper.BoardMapper";
+	private static String namespace = "com.sample.mapper.BoardMapper";
 
 	@Override
 	public void create(BoardVO vo) throws Exception {
