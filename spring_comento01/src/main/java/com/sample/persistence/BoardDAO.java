@@ -12,6 +12,7 @@ DAO (Data Access Object) : 데이터 접근 객체
 
 public interface BoardDAO {
 
+
 	public void create(BoardVO vo) throws Exception;
 
 	public BoardVO read(Integer bno) throws Exception;

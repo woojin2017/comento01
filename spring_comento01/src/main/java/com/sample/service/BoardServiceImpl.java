@@ -21,31 +21,31 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public void regist(BoardVO board) throws Exception {
 		// TODO Auto-generated method stub
-		//dao.create(board);
+		dao.create(board);
 	}
 
 	@Override
 	public BoardVO read(Integer bno) throws Exception {
 		// TODO Auto-generated method stub
-		//return dao.read(bno);
-		return null;
+		return dao.read(bno);
+		//return null;
 	}
 
 	@Override
 	public void modify(BoardVO board) throws Exception {
 		// TODO Auto-generated method stub
-		//dao.update(board);
+		dao.update(board);
 	}
 
 	@Override
 	public void remove(Integer bno) throws Exception {
 		// TODO Auto-generated method stub
-		//dao.delete(bno);
+		dao.delete(bno);
 	}
 
 	@Override
 	public List<BoardVO> listAll() throws Exception {
-		//return dao.listAll();
-		return null;
+		return dao.listAll();
+		//return null;
 	}
 }

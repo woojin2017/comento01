@@ -17,7 +17,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 
 	<update id="update">
-		update board set title =#{title}, content =#{content} 
+		update board set title =#{title}, content = #{content} 
 		where bno = #{bno}
 	</update>
 
@@ -25,7 +25,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		delete from board where bno = #{bno}
 	</delete>
 
-	<select id="listAll" resultType="com.myp.domain.BoardVO">
+	<select id="listAll" resultType="com.sample.domain.BoardVO">
 	<![CDATA[
 		select bno, title, content, writer, regdate, viewcnt 
 		from board 

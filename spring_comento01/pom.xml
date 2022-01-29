@@ -15,27 +15,32 @@
 	</properties>
 	<dependencies>
 	
+	<!-- MS SQL
+<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>9.4.1.jre11</version>
+</dependency>
+	 -->
+	 
+	 
 	<!-- oracle 수정하기
 	<dependency>
 	    <groupId>com.oracle.database.jdbc</groupId>
 	    <artifactId>ojdbc10</artifactId>
 	    <version>19.8.0.0</version>
 	</dependency> -->
-	 <!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP
-    <dependency> 
-        <groupId>com.zaxxer</groupId> 
-        <artifactId>HikariCP</artifactId> 
-        <version>4.0.2</version> 
-    </dependency>
-  --> 
 	
-	  <!-- MySQL  -->
+	
+	  <!-- MySQL   -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.27</version>
         </dependency>
 
+
+ 
  
         <!-- MyBatis 3.4.1 -->
         <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
